@@ -1,0 +1,27 @@
+Creas un archivo .gitignore que contiene 
+mediante expresiones regulares los archivos 
+y tipos de archivos que no queremos controlar
+por ejemplo: 
+
+$ cat .gitignore
+*.[oa]
+*~
+
+La primera línea le dice a Git que ignore 
+cualquier archivo cuyo nombre termine en .o o .a 
+La segunda línea le dice a Git que ignore todos 
+los archivos que terminan en tilde (~), 
+
+Configurar un archivo .gitignore antes de empezar 
+a trabajar suele ser una buena idea, para así 
+no confirmar archivos que no quieres en tu repositorio Git.
+
+Las reglas para los patrones que pueden ser incluidos en el archivo .gitignore son:
+
+Las líneas en blanco, o que comienzan por #, son ignoradas.
+Puedes usar patrones glob estándar.
+Puedes indicar un directorio añadiendo una barra hacia delante (/) al final.
+Puedes negar un patrón añadiendo una exclamación (!) al principio.
+
+
+REFERENCIA: http://git-scm.com/book/es/Fundamentos-de-Git-Guardando-cambios-en-el-repositorio
